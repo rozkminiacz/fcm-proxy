@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Implementation-Title: Jackson 2 extensions to the Google HTTP Client L
+ ibrary for Java.
+Implementation-Version: 1.21.0
+Implementation-Vendor-Id: com.google.http-client
+Implementation-Vendor: Google
+Build-Jdk: 1.6.x
+Built-By: Google
+
