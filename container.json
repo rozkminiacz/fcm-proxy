@@ -2,6 +2,6 @@
 	"id": "notifications",
 	"type": "wedeploy/java",
 	"hooks": {
-		"build": "gradle run"
+		"build": "./gradlew run"
 	}
 }
