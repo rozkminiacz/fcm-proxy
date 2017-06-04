@@ -3,6 +3,6 @@
 	"type": "wedeploy/java",
 	"hooks": {
 		"build": "gradle build --debug"
-		"run" : "gradle run --debug"
+		"run": "gradle run --debug"
 	}
 }
