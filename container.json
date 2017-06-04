@@ -2,7 +2,7 @@
 	"id": "notifications",
 	"type": "wedeploy/java",
 	"hooks": {
-		"build": "gradle build --debug",
-		"run": "gradle run --debug"
+		"build": "gradle -Dorg.gradle.native=false clean build -x test"
+
 	}
 }
