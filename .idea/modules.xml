@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirebaseModule.iml" filepath="$PROJECT_DIR$/.idea/modules/FirebaseModule.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirebaseModule_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FirebaseModule_main.iml" group="FirebaseModule" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirebaseModule_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FirebaseModule_test.iml" group="FirebaseModule" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IdeaProjects-boilerplate-java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/IdeaProjects-boilerplate-java_main.iml" group="boilerplate-java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IdeaProjects-boilerplate-java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/IdeaProjects-boilerplate-java_test.iml" group="boilerplate-java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/boilerplate-java.iml" filepath="$PROJECT_DIR$/.idea/modules/boilerplate-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/boilerplate-java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/boilerplate-java_main.iml" group="boilerplate-java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/boilerplate-java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/boilerplate-java_test.iml" group="boilerplate-java" />
     </modules>
   </component>
 </project>

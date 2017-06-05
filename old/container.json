@@ -1,0 +1,8 @@
+{
+	"id": "notifications",
+	"type": "wedeploy/java",
+	"hooks": {
+		"build": "./gradlew -Dorg.gradle.native=false clean build -x test"
+
+	}
+}

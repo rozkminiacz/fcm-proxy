@@ -2,10 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="FirebaseModule_main" target="1.8" />
-      <module name="FirebaseModule_test" target="1.8" />
-      <module name="spark-bootstrap_main" target="1.8" />
-      <module name="spark-bootstrap_test" target="1.8" />
+      <module name="boilerplate-java_main" target="1.8" />
+      <module name="boilerplate-java_test" target="1.8" />
+      <module name="fcm-proxy_main" target="1.8" />
+      <module name="fcm-proxy_test" target="1.8" />
+      <module name="fcm_main" target="1.8" />
+      <module name="fcm_test" target="1.8" />
+      <module name="IdeaProjects-boilerplate-java_main" target="1.8" />
+      <module name="IdeaProjects-boilerplate-java_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

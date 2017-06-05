@@ -1,33 +1,39 @@
-apply plugin: 'java'
-apply plugin: 'application'
-mainClassName = "com.rozkmin.Main"
+group 'io.smartcampus.fcm'
+version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+buildscript {
+  repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "http://repo.spring.io/release" }
+  }
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
+  }
+}
+
+apply plugin: 'java'
+apply plugin: org.springframework.boot.gradle.plugin.SpringBootPlugin
+
+task run(dependsOn: ':bootRun') << {
+    println 'Boot'
+}
 
 repositories {
-    mavenCentral()
+  mavenLocal()
+  mavenCentral()
+  maven { url "http://repo.spring.io/release" }
 }
 
 dependencies {
-    compile 'com.sparkjava:spark-core:2.3'
-    compile 'com.google.code.gson:gson:2.6.1'
-    compile 'org.mongodb:mongo-java-driver:2.13.3'
-    compile 'joda-time:joda-time:2.9.9'
-    compile 'io.reactivex.rxjava2:rxjava:2.0.0'
-    compile 'com.squareup.retrofit2:retrofit:2.2.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
-
-    testCompile 'junit:junit:4.11'
+  compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+  compile 'joda-time:joda-time:2.9.9'
+  compile 'io.reactivex.rxjava2:rxjava:2.0.0'
+  compile 'com.squareup.retrofit2:retrofit:2.2.0'
+  compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+  compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
 }
 
-jar {
-    manifest {
-        attributes "Main-Class": "$mainClassName"
-    }
-
-    //Ensure it's a fat JAR including dependencies.
-    from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-    }
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.12'
 }
